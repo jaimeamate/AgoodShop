@@ -1,18 +1,25 @@
-body{
+*{
     margin: 0;
     box-sizing: border-box;
 }
 
-.header{
+#header{
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.185);
 }
-.wrapper{
+
+.header-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.wrapper{
     margin-left: 100px;
     margin-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+
 .nav-links{
     display: flex;
     align-items: center;
@@ -24,4 +31,65 @@ body{
     border: 1px solid rgba(0, 0, 0, 0.185);
     padding: 5px;
     border-radius:  5px;
+}
+
+#gb{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgb(10, 207, 10);
+    color: white;
+    font-size: 0.7em;
+    padding: 5px;
+}
+
+#container-article{
+    display: flex;
+    gap: 20px;
+    position: relative;
+
+}
+
+#titulo-article{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#container-precio{
+    display: flex;
+    gap: 15px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.botonBlue{
+    color: white;
+    background-color: rgb(35, 111, 253);
+    border-radius: 5px;
+    border-color: transparent;
+    font-weight: lighter;
+    font-size:x-small;
+}
+
+#container-servicios{
+    display: flex;
+    gap: 10pxpx;
+}
+.container-servicios-item{
+    display: flex;
+    align-items: center;
+    width: 200px;
+
+}
+.servicio-imagen{
+    width: 50px;
+    height: 50px;
+}
+
+#footer{
+    border-top: 0.5px solid rgba(0, 0, 0, 0.185);
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
