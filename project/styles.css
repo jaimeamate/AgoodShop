@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.185);
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style-type: none;
+}
+
+#contactar{
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    padding: 5px;
+    border-radius:  5px;
+}
