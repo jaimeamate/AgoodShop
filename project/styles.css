@@ -1,6 +1,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .agoodshop{
@@ -11,17 +12,17 @@
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.185);
 }
 
-.header-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .wrapper{
     margin-left: 620px;
     margin-right: 620px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-links{
@@ -30,6 +31,10 @@
     gap: 15px;
     list-style-type: none;
     font-size: small;
+    & li:hover{
+        text-decoration: underline;
+        cursor:pointer;
+    }
 }
 
 #contactar{
@@ -65,6 +70,7 @@
     gap: 15px;
     padding-top: 20px;
     padding-bottom: 10px;
+    align-items: center;
 }
 
 .botonBlue{
@@ -72,8 +78,8 @@
     background-color: rgb(35, 111, 253);
     border-radius: 5px;
     border-color: transparent;
-    font-weight: lighter;
-    font-size:x-small;
+    font-weight: normal;
+    font-size:small;
     width: max-content;
     padding: 5px;
 }
@@ -82,10 +88,17 @@
     background-color: rgb(253, 35, 35);
     border-radius: 5px;
     border-color: transparent;
-    font-weight: lighter;
-    font-size:x-small;
+    font-weight: normal;
+    font-size:small;
     width: max-content;
     padding: 5px;
+}
+
+.botonRed:hover{
+    cursor:pointer;
+}
+.botonBlue:hover{
+    cursor:pointer;
 }
 
 #container-servicios{
@@ -131,7 +144,7 @@ aside{
 
 #container-formulario{
     display: flex;
-    gap: 30px;
+    gap: 50px;
     padding: 20px;
 }
 #container-formulario-items-1{
@@ -156,7 +169,7 @@ label{
     border: 1px solid rgb(219, 236, 250);
     border-radius: 6px;
     padding: 6px 5px;
-    color: lightgray;
+    color: black;
 }
 
 #footer{
@@ -168,4 +181,60 @@ label{
     /* position: absolute;
     bottom: 0;
     width: 100%; */
+}
+
+/* --------------------------------------------------------------------- */
+/* -------------------------------CSS MOBILE---------------------------- */
+/* --------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1280px) {
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .container-section-item img {
+        content: url("https://placehold.co/160x90");
+    }
+    .wrapper{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    header nav{
+        display: none;
+    }
+    #container-article{
+        flex-direction: column;
+        font-size: 0.8em;
+    }
+    #titulo-article{
+        font-size: 2.5em;
+    }
+    #container-servicios{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    #container-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-section-item{
+        width: 100%;
+        & h4 {
+            font-size: 1.2em;
+        }
+    }
+    #container-formulario{
+        flex-direction: column;
+        gap: 30px;
+    }
+    #container-formulario-items-2{
+        gap: 10px;
+    }
+    .inputText{
+        padding: 10px 10px;
+    }
+    #footer{
+        padding-bottom: 20px;
+    }
 }
