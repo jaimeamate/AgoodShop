@@ -31,6 +31,10 @@
     gap: 15px;
     list-style-type: none;
     font-size: small;
+    & li:hover{
+        text-decoration: underline;
+        cursor:pointer;
+    }
 }
 
 #contactar{
@@ -88,6 +92,13 @@
     font-size:small;
     width: max-content;
     padding: 5px;
+}
+
+.botonRed:hover{
+    cursor:pointer;
+}
+.botonBlue:hover{
+    cursor:pointer;
 }
 
 #container-servicios{
